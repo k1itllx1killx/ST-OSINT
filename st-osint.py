@@ -439,11 +439,27 @@ def main_menu():
            osint_tool(username)
            input("\nPress enter to return to menu...")
         elif choice == "2":
-            print("\nUpdating tool...")
-            # Simula remover y volver a descargar
+          print("\nUpdating tool...")
+
+          repo_name = "ST-OSINT"
+          repo_url = "https://github.com/k1itllx1killx/ST-OSINT.git"
+          repo_path = os.path.expanduser(f"~/{repo_name}")
+
+    # Eliminar si existe
+        if os.path.exists(repo_path):
+            os.system(f"rm -rf {repo_path}")
+     # wait       
+    print("please wait")
+
+    # Clonar repositorio en silencio
+    os.system(f"git clone {repo_url} {repo_path} > /dev/null 2>&1")
+
+    print("Tool updated!\n")
+    input("Press enter to return to menu...")
+            break
+        else:
+            print("Invalid option.")
             time.sleep(1)
-            print("Tool updated!\n")
-            input("Press enter to return to menu...")
         elif choice == "3":
             print("Exiting...")
             break
