@@ -428,9 +428,12 @@ def main_menu():
     while True:
         try:
             subprocess.run("clear", shell=True)
-        except:                                                                                                                    pass
+        except:                                                                                                                    
+            pass
         banner()
-        try:                                                                                                                       subprocess.run("echo '\n1. Run OSINT\n2. Update Tool\n3. Exit' | lolcat", shell=True)                              except:
+        try: 
+            subprocess.run("echo '\n1. Run OSINT\n2. Update Tool\n3. Exit' | lolcat", shell=True)                             
+            except:
             print("\n1. Run OSINT\n2. Update Tool\n3. Exit")
         choice = input("\nChoose an option: ").strip()
 
