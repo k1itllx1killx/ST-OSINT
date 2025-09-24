@@ -433,7 +433,7 @@ def main_menu():
         banner()
         try: 
             subprocess.run("echo '\n1. Run OSINT\n2. Update Tool\n3. Exit' | lolcat", shell=True)                             
-            except:
+        except:
             print("\n1. Run OSINT\n2. Update Tool\n3. Exit")
         choice = input("\nChoose an option: ").strip()
 
