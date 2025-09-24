@@ -23,7 +23,7 @@ Requirements
   # installation 
 
   # Clone the repository
-git clone https://github.com/<k1i>/ST-OSINT.git
+git clone https://github.com/<k1itllx1killx>/ST-OSINT.git
 cd ST-OSINT
 
 # Run setup to install dependencies
