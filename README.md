@@ -23,8 +23,11 @@ Requirements
   # installation 
 
   # Clone the repository
-git clone https://github.com/k1itllx1killx/ST-OSINT.git
-cd ST-OSINT
+
+```bash
+echo "git clone https://github.com/k1itllx1killx/ST-OSINT.git"
+echo "cd ST-OSINT"
+```
 
 # Run setup to install dependencies
 python3 setup.py
