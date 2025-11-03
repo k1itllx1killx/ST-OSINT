@@ -26,18 +26,21 @@ Requirements
 
 ```bash
 git clone https://github.com/k1itllx1killx/ST-OSINT.git
-cd ST-OSINT
+&& cd ST-OSINT
 ```
 
 # Run setup to install dependencies
-python3 setup.py
 
+```
+python3 setup.py
+```
 The setup script will automatically install required Python libraries and optional tools.
 
 # Usage
 
+```
 python3 st-osint.py
-
+```
 -------------------
 
 1.	Select an option from the menu:
